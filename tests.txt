@@ -6,7 +6,7 @@
   input1 = hey how are you
   output = array(hey, how, are, you)
 
-3.take inputted word from user and test if there are any matches to the array already created and return 1 for everytime it matches.
+3.take inputted word from user and for each time it appears in the sentence array return + 1 for every time it matches.
   input1 = love it
   input2 = love
   output = 1

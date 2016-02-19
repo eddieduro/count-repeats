@@ -4,17 +4,19 @@
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <link rel="stylesheet" href="web/../css/animate.css">
+        <link rel="stylesheet" href="web/../css/animate.css">
     </head>
     <body>
         <div class="container">
             <h1>Results:</h1>
             <hr>
             {% if count < 1 %}
-                <h3>"{{ word }}", does not appear in "{{ sentence }}"</h3>
+                <h3 class="animated fadeInRight">"{{ word }}", does not appear in "{{ sentence }}"</h3>
             {% elseif count >= 1 %}
-                <h3>"{{ word }}", appears {{ count }} time in "{{ sentence }}"</h3>
+                <h3 class="animated fadeInRight">"{{ word }}", appears {{ count }} time in "{{ sentence }}"</h3>
             {% else %}
-                <h3>"{{ word }}", appears {{ count }} times in "{{ sentence }}"</h3>
+                <h3 class="animated fadeInRight">"{{ word }}", appears {{ count }} times in "{{ sentence }}"</h3>
             {% endif %}
             <h3><a href="/">Home</a></h3>
         </div>

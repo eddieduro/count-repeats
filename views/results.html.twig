@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Results:</h1>
+            <hr>
+            {% if count < 1 %}
+                <h3>"{{ word }}", does not appear in "{{ sentence }}"</h3>
+            {% elseif count >= 1 %}
+                <h3>"{{ word }}", appears {{ count }} time in "{{ sentence }}"</h3>
+            {% else %}
+                <h3>"{{ word }}", appears {{ count }} times in "{{ sentence }}"</h3>
+            {% endif %}
+            <h3><a href="/">Home</a></h3>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    </body>
+</html>

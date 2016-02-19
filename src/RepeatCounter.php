@@ -1,5 +1,5 @@
 <?php
-    class Repeater
+    class RepeatCounter
     {
         function countRepeats($sentence, $word_search)
         {

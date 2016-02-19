@@ -1,12 +1,12 @@
 <?php
     require 'src/Repeater.php';
 
-    class RepeaterTest extends PHPUnit_Framework_TestCase
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
         function test_stringToLower()
         {
             // Arrange
-            $new_Repeater = new Repeater;
+            $new_Repeater = new RepeatCounter;
             $input = "wooHoO";
             $input2 = "yo";
             // Act
@@ -18,7 +18,7 @@
         function test_sentenceSplit()
         {
             // Arrange
-            $new_Repeater = new Repeater;
+            $new_Repeater = new RepeatCounter;
             $input = "hey you";
             $input2 = "yo";
 
@@ -32,7 +32,7 @@
         function test_searchMatchingWords()
         {
             // Arrange
-            $new_Repeater = new Repeater;
+            $new_Repeater = new RepeatCounter;
             $input = "hey you hey hey";
             $input2 = "hey";
             // Act

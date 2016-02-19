@@ -13,19 +13,19 @@
             $result = $new_Repeater->countRepeats($input);
 
             // Assert
-            $this->assertEquals("woohoo", $result);
+            $this->assertEquals(array("woohoo"), $result);
         }
-        // function test_sentenceSplit()
-        // {
-        //     // Arrange
-        //     $new_Repeater = new Repeater;
-        //     $input = "hey you";
-        //
-        //     // Act
-        //     $result = $new_Repeater->countRepeats($input);
-        //
-        //     // Assert
-        //     $this->assertEquals(array('hey','you'), $result);
-        // }
+        function test_sentenceSplit()
+        {
+            // Arrange
+            $new_Repeater = new Repeater;
+            $input = "hey you";
+
+            // Act
+            $result = $new_Repeater->countRepeats($input);
+
+            // Assert
+            $this->assertEquals(array('hey','you'), $result);
+        }
     }
 ?>

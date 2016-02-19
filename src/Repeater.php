@@ -4,7 +4,9 @@
         function countRepeats($sentence)
         {
             $lowerCase_sentence =  strtolower($sentence);
-            return $lowerCase_sentence;
+            $word_array = explode(" ", $lowerCase_sentence);
+
+            return $word_array;
         }
     }
 ?>
